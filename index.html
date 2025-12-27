@@ -236,6 +236,27 @@
             align-items: center;
         }
 
+        .about-profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
         .about-text p {
             margin-bottom: 1rem;
             color: var(--text-light);
@@ -637,28 +658,31 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="about-text fade-in">
-                    <p>
-                        Senior Full Stack Developer, Lead Engineer & DevOps Specialist (SC Cleared) with 18+ years of
-                        experience delivering secure, cloud-native, and scalable applications for government and enterprise.
-                        Expert in Python, Node.js, React, Java, PHP, AWS, Kubernetes, and CI/CD automation.
-                    </p>
-                    <p>
-                        Adept at leading cross-functional teams, modernizing legacy systems, and optimizing SDLC pipelines 
-                        to increase resilience, delivery velocity, and maintainability. Trusted contributor to high-impact 
-                        platforms for the UK Home Office, Ordnance Survey, and others.
-                    </p>
-                    <p>
-                        Technical leadership in microservices architecture, cloud-native design, and DevOps automation. 
-                        Strong expertise in AWS, Kubernetes, Docker, and CI/CD pipeline orchestration with Agile methodologies 
-                        (Scrum, TDD/BDD), code refactoring, and legacy transformation.
-                    </p>
-                    <p>
-                        Connect with me on <a href="https://www.linkedin.com/in/hemantkumargoswami/" 
-                        target="_blank" rel="noopener noreferrer" 
-                        style="color: var(--primary-color); text-decoration: none; font-weight: 600;">LinkedIn</a> 
-                        to learn more about my professional journey.
-                    </p>
+                <div class="about-profile fade-in">
+                    <img src="https://github.com/user-attachments/assets/4ffee3bc-6e69-4445-8f1c-c0c3e4a5438c" alt="HemantKumar Goswami" class="profile-image">
+                    <div class="about-text">
+                        <p>
+                            Senior Full Stack Developer, Lead Engineer & DevOps Specialist (SC Cleared) with 18+ years of
+                            experience delivering secure, cloud-native, and scalable applications for government and enterprise.
+                            Expert in Python, Node.js, React, Java, PHP, AWS, Kubernetes, and CI/CD automation.
+                        </p>
+                        <p>
+                            Adept at leading cross-functional teams, modernizing legacy systems, and optimizing SDLC pipelines 
+                            to increase resilience, delivery velocity, and maintainability. Trusted contributor to high-impact 
+                            platforms for the UK Home Office, Ordnance Survey, and others.
+                        </p>
+                        <p>
+                            Technical leadership in microservices architecture, cloud-native design, and DevOps automation. 
+                            Strong expertise in AWS, Kubernetes, Docker, and CI/CD pipeline orchestration with Agile methodologies 
+                            (Scrum, TDD/BDD), code refactoring, and legacy transformation.
+                        </p>
+                        <p>
+                            Connect with me on <a href="https://www.linkedin.com/in/hemantkumargoswami/" 
+                            target="_blank" rel="noopener noreferrer" 
+                            style="color: var(--primary-color); text-decoration: none; font-weight: 600;">LinkedIn</a> 
+                            to learn more about my professional journey.
+                        </p>
+                    </div>
                 </div>
                 <div class="about-stats fade-in">
                     <div class="stat-card">
