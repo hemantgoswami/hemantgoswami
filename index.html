@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Senior Full Stack Developer & DevOps Specialist with 18+ years experience. SC Cleared. Expert in Python, Node.js, AWS, Kubernetes.">
+    <meta name="description"
+        content="Senior Full Stack Developer & DevOps Specialist with 18+ years experience. SC Cleared. Expert in Python, Node.js, AWS, Kubernetes.">
     <meta name="author" content="HemantKumar Goswami">
     <title>HemantKumar Goswami | Lead Developer & DevOps Specialist</title>
     <style>
@@ -112,14 +114,19 @@
             position: absolute;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
             background-size: 50px 50px;
             animation: moveBackground 20s linear infinite;
         }
 
         @keyframes moveBackground {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(50px, 50px);
+            }
         }
 
         .hero-content {
@@ -187,6 +194,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -358,7 +366,12 @@
 
         .timeline-item {
             margin-bottom: 3rem;
-            position: relative;
+            position: static;
+            margin-top: -200px;
+        }
+
+        .timeline-item:first-child {
+            margin-top: 0;
         }
 
         .timeline-item:nth-child(odd) .timeline-content {
@@ -624,6 +637,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav id="navbar">
@@ -659,27 +673,34 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-profile fade-in">
-                    <img src="https://github.com/user-attachments/assets/4ffee3bc-6e69-4445-8f1c-c0c3e4a5438c" alt="HemantKumar Goswami" class="profile-image">
+                    <img src="https://github.com/user-attachments/assets/4ffee3bc-6e69-4445-8f1c-c0c3e4a5438c"
+                        alt="HemantKumar Goswami" class="profile-image">
                     <div class="about-text">
                         <p>
-                            Senior Full Stack Developer, Lead Engineer & DevOps Specialist (SC Cleared) with 18+ years of
-                            experience delivering secure, cloud-native, and scalable applications for government and enterprise.
+                            Senior Full Stack Developer, Lead Engineer & DevOps Specialist (SC Cleared) with 18+ years
+                            of
+                            experience delivering secure, cloud-native, and scalable applications for government and
+                            enterprise.
                             Expert in Python, Node.js, React, Java, PHP, AWS, Kubernetes, and CI/CD automation.
                         </p>
                         <p>
-                            Adept at leading cross-functional teams, modernizing legacy systems, and optimizing SDLC pipelines 
-                            to increase resilience, delivery velocity, and maintainability. Trusted contributor to high-impact 
+                            Adept at leading cross-functional teams, modernizing legacy systems, and optimizing SDLC
+                            pipelines
+                            to increase resilience, delivery velocity, and maintainability. Trusted contributor to
+                            high-impact
                             platforms for the UK Home Office, Ordnance Survey, and others.
                         </p>
                         <p>
-                            Technical leadership in microservices architecture, cloud-native design, and DevOps automation. 
-                            Strong expertise in AWS, Kubernetes, Docker, and CI/CD pipeline orchestration with Agile methodologies 
+                            Technical leadership in microservices architecture, cloud-native design, and DevOps
+                            automation.
+                            Strong expertise in AWS, Kubernetes, Docker, and CI/CD pipeline orchestration with Agile
+                            methodologies
                             (Scrum, TDD/BDD), code refactoring, and legacy transformation.
                         </p>
                         <p>
-                            Connect with me on <a href="https://www.linkedin.com/in/hemantkumargoswami/" 
-                            target="_blank" rel="noopener noreferrer" 
-                            style="color: var(--primary-color); text-decoration: none; font-weight: 600;">LinkedIn</a> 
+                            Connect with me on <a href="https://www.linkedin.com/in/hemantkumargoswami/" target="_blank"
+                                rel="noopener noreferrer"
+                                style="color: var(--primary-color); text-decoration: none; font-weight: 600;">LinkedIn</a>
                             to learn more about my professional journey.
                         </p>
                     </div>
@@ -717,11 +738,18 @@
                         <span class="skill-tag">HTML5</span>
                         <span class="skill-tag">CSS3</span>
                         <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">jQuery</span>
+                        <span class="skill-tag">TypeScript</span>
                         <span class="skill-tag">React</span>
-                        <span class="skill-tag">AngularJS</span>
+                        <span class="skill-tag">Angular</span>
                         <span class="skill-tag">Twig</span>
+                        <span class="skill-tag">Blade</span>
                         <span class="skill-tag">SASS</span>
+                        <span class="skill-tag">Tailwind</span>
+                        <span class="skill-tag">Bootstrap</span>
                         <span class="skill-tag">Grunt</span>
+                        <span class="skill-tag">Gulp</span>
+                        <span class="skill-tag">Webpack</span>
                     </div>
                 </div>
                 <div class="skill-category fade-in">
@@ -735,6 +763,11 @@
                         <span class="skill-tag">Symfony</span>
                         <span class="skill-tag">Laravel</span>
                         <span class="skill-tag">Zend</span>
+                        <span class="skill-tag">TDD/BDD</span>
+                        <span class="skill-tag">Jest</span>
+                        <span class="skill-tag">PHPUnit</span>
+                        <span class="skill-tag">SonarQube</span>
+                        <span class="skill-tag">JIRA Development</span>
                     </div>
                 </div>
                 <div class="skill-category fade-in">
@@ -742,24 +775,37 @@
                     <div class="skill-list">
                         <span class="skill-tag">PostgreSQL</span>
                         <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MSSQL</span>
+                        <span class="skill-tag">NoSQL</span>
+                        <span class="skill-tag">Data Pipelines</span>
                         <span class="skill-tag">AWS</span>
                         <span class="skill-tag">AWS RDS</span>
                         <span class="skill-tag">S3</span>
                         <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Terraform</span>
                         <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Drone CI</span>
+                        <span class="skill-tag">Artifactory</span>
+                        <span class="skill-tag">Vagrant</span>
                     </div>
                 </div>
                 <div class="skill-category fade-in">
                     <h3>DevOps & Tools</h3>
                     <div class="skill-list">
+                        <span class="skill-tag">CI/CD</span>
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">Drone CI</span>
                         <span class="skill-tag">SonarQube</span>
                         <span class="skill-tag">Artifactory</span>
                         <span class="skill-tag">Vagrant</span>
-                        <span class="skill-tag">TDD/BDD</span>
                         <span class="skill-tag">Agile/Scrum</span>
+                        <span class="skill-tag">Data Analytics</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Ansible</span>
+
                     </div>
                 </div>
             </div>
@@ -786,13 +832,17 @@
                 <div class="timeline-item fade-in">
                     <div class="timeline-content">
                         <h3>Senior Software Developer</h3>
-                        <div class="company">UK Home Office (via Aker Systems)</div>
-                        <div class="date">November 2016 - Present</div>
+                        <div class="company">UK Home Office</div>
+                        <div class="date">November 2016 - November 2025</div>
                         <ul>
-                            <li>Developed cloud-native applications handling millions of flight records monthly for secure vetting processes</li>
-                            <li>Engineered microservices and APIs using Node.js/Python/PostgreSQL on AWS Kubernetes infrastructure</li>
+                            <li>Developed multiple mission critical cloud-native applications handling millions of
+                                flight records monthly for
+                                secure vetting processes</li>
+                            <li>Engineered microservices and APIs using Python/Node.js/PostgreSQL on AWS Kubernetes
+                                infrastructure</li>
                             <li>Modernized legacy applications through Django, Symfony, and Node.js refactoring</li>
-                            <li>Enhanced CI/CD pipelines with Drone, Jenkins, SonarQube, reducing regression errors by 60%</li>
+                            <li>Enhanced CI/CD pipelines with Drone, Jenkins, SonarQube, reducing regression errors by
+                                60%</li>
                             <li>Led cross-functional teams in sprint execution and technical planning</li>
                         </ul>
                     </div>
@@ -803,9 +853,11 @@
                         <div class="company">Elevate</div>
                         <div class="date">March 2016 - September 2016</div>
                         <ul>
-                            <li>Developed backend services using Zend Framework and Silex with responsive Twig frontend</li>
+                            <li>Developed backend services using Zend Framework and Silex with responsive Twig frontend
+                            </li>
                             <li>Implemented RESTful web services and automated CSS/JS bundling using Grunt</li>
-                            <li>Contributed to sunny.co.uk platform development ensuring modern, agile-friendly architecture</li>
+                            <li>Contributed to sunny.co.uk platform development ensuring modern, agile-friendly
+                                architecture</li>
                         </ul>
                     </div>
                 </div>
@@ -830,7 +882,7 @@
                         <ul>
                             <li>Managed complete development lifecycle of in-house applications</li>
                             <li>Developed surveys, campaign manager, and pricing models applications</li>
-                            <li>Created technical and user requirement documentation</li>
+                            <li>Created technical and user documentation</li>
                         </ul>
                     </div>
                 </div>
@@ -847,7 +899,8 @@
                     <div class="project-image">✈️</div>
                     <div class="project-content">
                         <h3>General Aviation Information Tool</h3>
-                        <p>Enabled secure ingestion of millions of flight records monthly for UK Home Office, improving vetting process and compliance reporting with cloud-native architecture.</p>
+                        <p>Enabled secure ingestion of millions of flight records monthly for UK Home Office, improving
+                            vetting process and compliance reporting with cloud-native architecture.</p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
                             <span class="project-tag">Node.js</span>
@@ -855,7 +908,8 @@
                             <span class="project-tag">Kubernetes</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://www.gov.uk/government/organisations/home-office" class="project-link" target="_blank" rel="noopener noreferrer">UK Home Office →</a>
+                            <a href="https://www.gov.uk/government/organisations/home-office" class="project-link"
+                                target="_blank" rel="noopener noreferrer">UK Home Office →</a>
                         </div>
                     </div>
                 </div>
@@ -863,7 +917,8 @@
                     <div class="project-image">🗺️</div>
                     <div class="project-content">
                         <h3>OS Maps - Custom Made</h3>
-                        <p>Led the transformation of Ordnance Survey's mapping application from Silverlight to modern HTML5, creating a robust Symfony2-based platform for UK's national mapping agency.</p>
+                        <p>Led the transformation of Ordnance Survey's mapping application from Silverlight to modern
+                            HTML5, creating a robust Symfony2-based platform for UK's national mapping agency.</p>
                         <div class="project-tags">
                             <span class="project-tag">Symfony2</span>
                             <span class="project-tag">PHP</span>
@@ -871,7 +926,8 @@
                             <span class="project-tag">HTML5</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://shop.ordnancesurvey.co.uk/custom-made/" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
+                            <a href="https://shop.ordnancesurvey.co.uk/custom-made/" class="project-link"
+                                target="_blank" rel="noopener noreferrer">View Project →</a>
                         </div>
                     </div>
                 </div>
@@ -879,7 +935,8 @@
                     <div class="project-image">☀️</div>
                     <div class="project-content">
                         <h3>Sunny.co.uk</h3>
-                        <p>Developed and maintained backend services for Elevate's platform using Zend Framework and Silex, with responsive frontend and optimized performance.</p>
+                        <p>Developed and maintained backend services for Elevate's platform using Zend Framework and
+                            Silex, with responsive frontend and optimized performance.</p>
                         <div class="project-tags">
                             <span class="project-tag">PHP</span>
                             <span class="project-tag">Zend</span>
@@ -887,7 +944,8 @@
                             <span class="project-tag">Grunt</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://sunny.co.uk/" class="project-link" target="_blank" rel="noopener noreferrer">View Site →</a>
+                            <a href="https://sunny.co.uk/" class="project-link" target="_blank"
+                                rel="noopener noreferrer">View Site →</a>
                         </div>
                     </div>
                 </div>
@@ -895,7 +953,8 @@
                     <div class="project-image">🔒</div>
                     <div class="project-content">
                         <h3>Home Office Security Systems</h3>
-                        <p>Built multiple mission-critical applications including Chemical Reporting System, Carrier Reporting Tool, and Business Data Manager for UK government security operations.</p>
+                        <p>Built multiple mission-critical applications including Chemical Reporting System, Carrier
+                            Reporting Tool, and Business Data Manager for UK government security operations.</p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
                             <span class="project-tag">Django</span>
@@ -903,7 +962,8 @@
                             <span class="project-tag">AWS</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://www.gov.uk/government/organisations/home-office" class="project-link" target="_blank" rel="noopener noreferrer">UK Home Office →</a>
+                            <a href="https://www.gov.uk/government/organisations/home-office" class="project-link"
+                                target="_blank" rel="noopener noreferrer">UK Home Office →</a>
                         </div>
                     </div>
                 </div>
@@ -932,8 +992,10 @@
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                 </form>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/hemantkumargoswami/" class="social-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">💼</a>
-                    <a href="https://github.com/hemantgoswami" class="social-link" target="_blank" rel="noopener noreferrer" title="GitHub">🐙</a>
+                    <a href="https://www.linkedin.com/in/hemantkumargoswami/" class="social-link" target="_blank"
+                        rel="noopener noreferrer" title="LinkedIn">💼</a>
+                    <a href="https://github.com/hemantgoswami" class="social-link" target="_blank"
+                        rel="noopener noreferrer" title="GitHub">🐙</a>
                     <a href="mailto:contact@hemantgoswami.com" class="social-link" title="Email">✉️</a>
                     <a href="tel:+447528200009" class="social-link" title="Phone">📞</a>
                 </div>
@@ -994,14 +1056,14 @@
         const contactForm = document.getElementById('contactForm');
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             // Get form data
             const formData = new FormData(contactForm);
             const data = Object.fromEntries(formData);
-            
+
             // In a real application, you would send this to a backend
             console.log('Form submitted:', data);
-            
+
             // Show success message
             alert('Thank you for your message! I will get back to you soon.');
             contactForm.reset();
@@ -1026,4 +1088,5 @@
         });
     </script>
 </body>
+
 </html>
