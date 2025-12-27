@@ -24,6 +24,7 @@
             --bg-light: #f9fafb;
             --bg-white: #ffffff;
             --border-color: #e5e7eb;
+            --tick-color: #10b981;
         }
 
         html {
@@ -84,6 +85,13 @@
 
         nav ul li a:hover {
             color: var(--primary-color);
+        }
+
+        .tick {
+            color: var(--tick-color);
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-right: 5px;
         }
 
         .mobile-menu-btn {
@@ -436,8 +444,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
+            font-size: 8rem;
             color: white;
+            padding: 10px;
         }
 
         .project-content {
@@ -483,6 +492,36 @@
 
         .project-link:hover {
             color: var(--secondary-color);
+        }
+
+        /* Certifications: style titles placed inside image block */
+        #certifications .project-image img {
+            margin: 20px;
+        }
+
+        #certifications .project-image div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 63%
+        }
+
+        #certifications .project-image h3 {
+            font-size: 1.25rem;
+            margin: 0.5rem 0 0.25rem;
+            color: var(--bg-white);
+            font-weight: 700;
+            text-align: center;
+        }
+
+        #certifications .project-image h4 {
+            font-size: 0.80rem;
+            margin: 0;
+            color: var(--bg-white);
+            font-weight: 500;
+            text-align: center;
         }
 
         /* Contact Section */
@@ -650,6 +689,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -681,7 +721,8 @@
                             of
                             experience delivering secure, cloud-native, and scalable applications for government and
                             enterprise.
-                            Expert in Python, Node.js, React, Java, PHP, AWS, Kubernetes, and CI/CD automation.
+                            Expert in <b>Python</b>, <b>Node.js</b>, <b>AWS</b>, <b>Kubernetes</b>, <b>React</b>,
+                            <b>Java</b>, <b>PHP</b> and <b>CI/CD automation</b>.
                         </p>
                         <p>
                             Adept at leading cross-functional teams, modernizing legacy systems, and optimizing SDLC
@@ -932,7 +973,7 @@
                     </div>
                 </div>
                 <div class="project-card fade-in">
-                    <div class="project-image">☀️</div>
+                    <div class="project-image">🏦</div>
                     <div class="project-content">
                         <h3>Sunny.co.uk</h3>
                         <p>Developed and maintained backend services for Elevate's platform using Zend Framework and
@@ -964,6 +1005,92 @@
                         <div class="project-links">
                             <a href="https://www.gov.uk/government/organisations/home-office" class="project-link"
                                 target="_blank" rel="noopener noreferrer">UK Home Office →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img height="90%" src="images/aws_certified.png" alt="AWS Certified">
+                        <div>
+                            <h3>AWS Certified Developer – Associate</h3>
+                            <h4>Issued by Amazon Web Services Training and Certification</h4>
+                        </div>
+                    </div>
+                    <div class="project-content">
+
+                        <p>Earners of this certification have a comprehensive understanding of application life-cycle
+                            management. They demonstrated
+                            proficiency in writing applications with AWS service APIs, AWS CLI, and SDKs; using
+                            containers; and deploying with a
+                            CI/CD pipeline. Badge owners are able to develop, deploy, and debug cloud-based applications
+                            that follow AWS best
+                            practices.</p>
+
+                        <p>Earners of this certification have a comprehensive understanding of application life-cycle
+                            management. They demonstrated
+                            proficiency in writing applications with AWS service APIs, AWS CLI, and SDKs; using
+                            containers; and deploying with a
+                            CI/CD pipeline. Badge owners are able to develop, deploy, and debug cloud-based applications
+                            that follow AWS best
+                            practices.</p>
+
+                        <a href="https://aws.amazon.com/certification/certified-developer-associate/"
+                            target="_blank">Learn more</a>
+                        <div class="project-tags">
+                            <span class="project-tag">AWS</span>
+                            <span class="project-tag">Certification</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.credly.com/badges/0104d363-302a-4cec-a831-4083075f608b/linked_in?t=t1mcm8"
+                                class="project-link" target="_blank" rel="noopener noreferrer">View Credential →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img height="90%" src="images/the_nuts_and_bolts_of_machine_learning_certificate.jpeg"
+                            alt="The Nuts and Bolts of Machine Learning by Google">
+                        <div>
+                            <h3>The Nuts and Bolts of <br /> Machine Learning</h3>
+                            <h4>Issued by Google</h4>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p>This course introduces the foundational concepts of machine learning. You will learn
+                            different types of machine learning,
+                            how to prepare data for training, and how to build and evaluate supervised and unsupervised
+                            learning models using Python.
+                            By the end of this course, you will be able to select appropriate models and metrics for
+                            various machine learning tasks.</p>
+
+                        <p>
+                            <span class='tick'>&#10003;</span> Identify characteristics of the different types of
+                            machine
+                            learning;<br \>
+                            <span class='tick'>&#10003;</span> Prepare data for machine learning models; <br \>
+                            <span class='tick'>&#10003;</span> Build and evaluate supervised and unsupervised learning
+                            models using Python; <br \>
+                            <span class='tick'>&#10003;</span> Demonstrate proper model and metric selection for a
+                            machine learning algorithm.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="project-tag">Google</span>
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">Certification</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.coursera.org/account/accomplishments/verify/89QXV0F5AHLL"
+                                class="project-link" target="_blank" rel="noopener noreferrer">View Credential →</a>
                         </div>
                     </div>
                 </div>
