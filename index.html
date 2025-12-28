@@ -663,6 +663,18 @@
             }
         }
 
+        /* Navbar Logo */
+        .logo img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary-color);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            position: absolute;
+            top: 5px;
+        }
+
         /* Animations */
         .fade-in {
             opacity: 0;
@@ -681,7 +693,9 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="container">
-            <a href="#" class="logo">HKG</a>
+            <a href="https://www.linkedin.com/in/hemantkumargoswami/" target="_blank" class="logo">
+                <img src="images/profile.jpeg" alt="Hemantkumar Goswami" />
+            </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
             <ul id="navMenu">
                 <li><a href="#home">Home</a></li>
