@@ -386,7 +386,7 @@
         .timeline-item {
             margin-bottom: 3rem;
             position: static;
-            margin-top: -200px;
+            margin-top: 0px;
         }
 
         .timeline-item:first-child {
@@ -674,6 +674,14 @@
             }
         }
 
+        @media (min-width: 768px) {
+            .timeline-item {
+                margin-bottom: 3rem;
+                position: static;
+                margin-top: -200px;
+            }
+        }
+
         /* Navbar Logo */
         .logo img {
             width: 45px;
@@ -716,7 +724,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="public/doc/CV-Hemantkumar-Goswami.pdf" download target="_blank"
-                    rel="noopener noreferrer">CV</a></li>
+                        rel="noopener noreferrer">CV</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
