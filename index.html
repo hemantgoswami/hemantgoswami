@@ -109,7 +109,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             text-align: center;
             padding: 2rem;
@@ -120,27 +119,39 @@
         .hero::before {
             content: '';
             position: absolute;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-            background-size: 50px 50px;
-            animation: moveBackground 20s linear infinite;
-        }
-
-        @keyframes moveBackground {
-            0% {
-                transform: translate(0, 0);
-            }
-
-            100% {
-                transform: translate(50px, 50px);
-            }
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.0);
+            z-index: 0;
         }
 
         .hero-content {
             position: relative;
             z-index: 1;
             max-width: 800px;
+            color: hwb(175 72% 0%)
+        }
+
+        .hero-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: -50px;
+            background-color: rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(12px) saturate(120%);
+            -webkit-backdrop-filter: blur(12px) saturate(120%);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow:
+                0 20px 40px rgba(0, 0, 0, 0.25),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.12);
+            z-index: -1;
         }
 
         .hero h1 {
@@ -719,6 +730,7 @@
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
+
     </section>
 
     <!-- About Section -->
@@ -875,7 +887,7 @@
                     <div class="timeline-content">
                         <h3>Director</h3>
                         <div class="company">Ultratek Limited</div>
-                        <div class="date">March 2024 - Present</div>
+                        <div class="date">April 2012 - Present</div>
                         <ul>
                             <li>Leading strategic technology initiatives and business development</li>
                             <li>Overseeing enterprise systems development and cloud architecture</li>
@@ -917,6 +929,50 @@
                 </div>
                 <div class="timeline-item fade-in">
                     <div class="timeline-content">
+                        <h3>Senior PHP (Symfony2) Developer</h3>
+                        <div class="company">Salmon</div>
+                        <div class="date">November 2015 - March 2016</div>
+                        <ul>
+                            <li>Migrated Travelodge’s legacy Drupal system to a modern, responsive architecture using
+                                Symfony, with updated front-end tooling and scalable backend services</li>
+                            <li>Delivered high-quality code enhancements, restructured legacy components, and applied
+                                design
+                                patterns to boost application performance and maintainability</li>
+                            <li>Wrote robust unit and functional tests using PHPUnit and Codeception, significantly
+                                increasing test coverage and reducing post-deployment defects</li>
+                            <li>Collaborated with cross-functional teams across development, QA, and DevOps to ensure
+                                seamless CI/CD integration and smooth production releases</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Snr. PHP Developer</h3>
+                        <div class="company">Encompass Digital Media, Inc.</div>
+                        <div class="date">September 2015 - November 2015</div>
+                        <ul>
+                            <li>Led team of 2 developers</li>
+                            <li>Worked on Symfony2 based application to monitor media streaming</li>
+                            <li>Implemented core logic to get the streaming data</li>
+                            <li>Application hosted on AWS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Senior PHP Developer</h3>
+                        <div class="company">Direct & General via Salmon</div>
+                        <div class="date">August 2015 - September 2015</div>
+                        <ul>
+                            <li>Single handedly created a script to extract data based on certain conditions</li>
+                            <li>This script was hookend into cron job using command line application</li>
+                            <li>Data was then pushed to the relevant systems for further processing</li>
+                            <li>Also optimised data extraction process for better performance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
                         <h3>Lead PHP (Symfony2) Developer</h3>
                         <div class="company">Ordnance Survey</div>
                         <div class="date">December 2014 - July 2015</div>
@@ -930,14 +986,177 @@
                 </div>
                 <div class="timeline-item fade-in">
                     <div class="timeline-content">
+                        <h3>Lead Symfony2 Developer</h3>
+                        <div class="company">Newspress Ltd</div>
+                        <div class="date">March 2014 - November 2014</div>
+                        <ul>
+                            <li>Designed a new Symfony2 multi-lingual Application, capable of having multiple clients
+                                (i.e. client domains.</li>
+                            <li>Clients were the car makers, hence, they had their own specific user base all provided
+                                by newspress.</li>
+                            <li>Managing the whole project and a team of 3 developers</li>
+                            <li>Testing and deploying the application to production.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Symfony2 Developer</h3>
+                        <div class="company">Sportslobster Ltd</div>
+                        <div class="date">January 2014 - March 2014</div>
+                        This was a small 2 months contract to help Sportslobster in maintaining their existing Symfony2
+                        based application.
+                        <ul>
+                            <li>Resolving existing issues</li>
+                            <li>Adding new features</li>
+                            <li>Creating / Updating API endpoints to interface with the website and mobile apps.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Symfony2 Developer</h3>
+                        <div class="company">Holler Digital Ltd</div>
+                        <div class="date">December 2013 - December 2013</div>
+                        This was a small assignment to help them finish work within the set deadline. I was working on a
+                        project for Redbull,
+                        They had a cycling event in early January and wanted to created an application. Project was
+                        heavily loaded with API
+                        services. Idea was to allow cyclist to download the Redbull Route to his/her mobile phone (using
+                        the app map my fitness)
+                        and then do the workout with that app. After the workout is completed, push the data back to the
+                        Redbull web
+                        application. Now, to do this, several API services were used as follows:
+
+                        <ul>
+                            <li>API call to facebook for creating user and login.</li>
+                            <li>API call to connect / register / login to map my api</li>
+                            <li>API call to upload / download workout</li>
+                            <li>API service to allow users to connect and download their data</li>
+                            <li>API call to map my api for displaying various calculation based information about their
+                                workout.</li>
+                            <li>API service to show the ledgers board and show the winner.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Senior PHP Developer (Laravel)</h3>
+                        <div class="company">The App Garden Ltd</div>
+                        <div class="date">August 2013 - November 2013</div>
+                        The App Garden is fast becoming one of the UK’s leading mobile app development agencies.
+
+                        Designing, building and publishing mobile app solutions on both Apple’s iOS and Google’s Android
+                        platforms, so that
+                        businesses can take advantage of the explosive growth of smartphone and tablet devices.
+
+                        <ul>
+                            <li>Greenfield project based on Laravel4 Framework.</li>
+                            <li>Application Design and Development</li>
+                            <li>Worked closley with directors and many dentists</li>
+                            <li>TDD/BDD Practices</li>
+                            <li>Successfully completed application.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Senior PHP Developer (Symfony2)</h3>
+                        <div class="company">Arqiva Ltd</div>
+                        <div class="date">May 2013 - July 2013</div>
+                        Arqiva being a major communications infrastructure and media services company, operating at the
+                        heart of the broadcast,
+                        satellite and mobile communications markets.
+
+                        <ul>
+                            <li>Working in a team that strictly follows AGILE principles.</li>
+                            <li>Carefully studying the tasks assigned, developing it by</li>
+                            <li>sticking to the standards agreed.</li>
+                            <li>Updating existing Public Wifi access portal for a specific client.</li>
+                            <li>responsible for rewriting the public Wifi Access Portal.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
                         <h3>Senior PHP Developer</h3>
                         <div class="company">Hospedia Ltd</div>
                         <div class="date">February 2009 - April 2013</div>
+                        Hospedia Ltd. (Formerly known as “Patient Line”)
+
+                        A major telephony and entertainment service provider to hospitals in UK. I was responsible for
+                        writing user/technical
+                        requirements document, for in-house required software. On approval of documents, I take care of
+                        whole development life
+                        cycle of the application
                         <ul>
                             <li>Managed complete development lifecycle of in-house applications</li>
                             <li>Developed surveys, campaign manager, and pricing models applications</li>
                             <li>Created technical and user documentation</li>
                         </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Premier Telesolutions</h3>
+                        <div class="company">Hospedia Ltd</div>
+                        <div class="date">September 2007 - January 2009</div>
+                        Premier had a small in-house development team, where I work as a lead Senior PHP developer.
+
+                        Understanding specs, provided by marketing team and coming up with development plan. After
+                        approval by I.T. Director,
+                        the development
+                        plan was executed and sent out for testing and finally for implementation. Apart this, I was
+                        also responsible to take
+                        care of
+                        existing sites/applications and apply fixes where
+                        ever required.
+                        <ul>
+                            <li>Managed complete development lifecycle of in-house applications</li>
+                            <li>Developed surveys, campaign manager, and pricing models applications</li>
+                            <li>Created technical and user documentation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>PHP Developer</h3>
+                        <div class="company">Brunel University</div>
+                        <div class="date">October 2006 - March 2007</div>
+                        Done a Surveys Project for Brunel University, that was based on Flash. Flash was not my strength
+                        so Prof. Daniel was a
+                        helping hand in that. Project had its very own challenges and beauties. For example, the
+                        challenge of passing data
+                        between the database and flash application via PHP. Since it was based on flash, it was very
+                        much anticipated that it
+                        will have some beautiful flashy images and icons to impress.
+
+                        One other feature in that was, it was stateful survey which means, a user had a dedicated link
+                        for it to take survey and
+                        if for some reason, the person had left it incomplete, he/she can continue from where it was
+                        left when the link is
+                        opened again.
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>PHP Developer</h3>
+                        <div class="company">Shaadi.com</div>
+                        <div class="date">2005 - 2006</div>
+                        Shaadi.com being a product based company, I was responsible for Development of new modules to
+                        implement and integrate
+                        with the existing model of shaadi point. Resolving issues occurring in the current model.
+
+                        Studying the product specs, planning things accordingly, giving dead-lines & completing task.
+                        Completing development in
+                        the committed time frame with Zero Error.
+                        Shaadi.com being a product based company, I was responsible for Development of new modules to
+                        implement and integrate
+                        with the existing model of shaadi point. Resolving issues occurring in the current model.
+                        Studying the product specs,
+                        planning things accordingly, giving dead-lines & completing task. Completing development in the
+                        committed time frame
+                        with Zero Error.
                     </div>
                 </div>
             </div>
@@ -970,7 +1189,7 @@
                 <div class="project-card fade-in">
                     <div class="project-image">🗺️</div>
                     <div class="project-content">
-                        <h3>OS Maps - Custom Made</h3>
+                        <h3>OS Maps</h3>
                         <p>Led the transformation of Ordnance Survey's mapping application from Silverlight to modern
                             HTML5, creating a robust Symfony2-based platform for UK's national mapping agency.</p>
                         <div class="project-tags">
@@ -988,7 +1207,7 @@
                 <div class="project-card fade-in">
                     <div class="project-image">🏦</div>
                     <div class="project-content">
-                        <h3>Sunny.co.uk</h3>
+                        <h3>Think Finance - Sunny.co.uk</h3>
                         <p>Developed and maintained backend services for Elevate's platform using Zend Framework and
                             Silex, with responsive frontend and optimized performance.</p>
                         <div class="project-tags">
@@ -1224,6 +1443,40 @@
                 alert('Oops! There was a problem submitting your form. Please try again later.');
                 console.error('Form submission error:', error);
             }
+        });
+        // Background images for carousel
+        const heroImages = [
+            'public/images/hero/hero-bg-1.png',
+            'public/images/hero/hero-bg-2.png',
+            'public/images/hero/hero-bg-3.png',
+            'public/images/hero/hero-bg-4.png',
+            'public/images/hero/hero-bg-5.png',
+            'public/images/hero/hero-bg-6.png',
+            'public/images/hero/hero-bg-7.png',
+            'public/images/hero/hero-bg-8.png',
+            'public/images/hero/hero-bg-9.png'
+        ];
+        let currentHeroImageIndex = 0;
+
+        function changeHeroBackground() {
+            const heroSection = document.querySelector('.hero');
+            currentHeroImageIndex = (currentHeroImageIndex + 1) % heroImages.length;
+            heroSection.style.backgroundImage = `url(${heroImages[currentHeroImageIndex]})`;
+            heroSection.style.backgroundSize = 'cover';
+            heroSection.style.backgroundPosition = 'center';
+            heroSection.style.transition = 'background-image 1s ease-in-out';
+        }
+
+        // Initial background image
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroSection = document.querySelector('.hero');
+            if (heroSection) {
+                heroSection.style.backgroundImage = `url(${heroImages[currentHeroImageIndex]})`;
+                heroSection.style.backgroundSize = 'cover';
+                heroSection.style.backgroundPosition = 'center';
+            }
+            // Start carousel
+            setInterval(changeHeroBackground, 5000); // Change image every 5 seconds
         });
 
         // Set the Formspree action URL for the contact form
